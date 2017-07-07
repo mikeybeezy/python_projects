@@ -1,22 +1,32 @@
 #Ask the user for their name
-name = input("Hello My name is Sammy what is your name?: " )
-print(name)
-
+name = input("Hello My name is Sammy what is your name?: " ).strip().title()
+reply = "Hi " + (name)
+print("")
+print(reply)
+print("")
 #How do you know Mikey Babs
 mikeyb = input("How do you know Michael Babs?: ")
+print("")
 print('''oh Nice!, so thats how you know Michael.... ''')
 #Ask the user their age
-age = input ("So how old are you?: ")
-print(age)
+q = "? :"
+age = input("So how old are you " + (name) + (q)) 
+reply_2 = "Oh really!!! you look good for someone" +(age) 
+print("")
+print(reply_2)
+print("")
 #Ask the user their city
-city = input("What City do you live in?: ")
+city = input("What City do you live in?: ").title()
 print(city)
 #Ask the user what they enjoy
+print("")
 hobby = input("What do you enjoy doing?: ")
 print (hobby)
+print("")
 #create output text
+print("")
 string = "Your name is {} and you are {} years old. You live in {} and you love {}"
 output = string.format(name, age, city, hobby )
 #Print output text
-print(output + ( ". In you oun word this is how you say you know Michael."+(mikeyb)))
-
+print("")
+print(output + ( ". In you oun word this is how you say you know Michael>>"+(mikeyb)))

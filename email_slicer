@@ -1,0 +1,38 @@
+print('''Hello mate, my Name is Sammy...''')
+
+print(" ")
+print('''I have been created by Michael to help you''')
+print(" ")
+name = input("Can you please begin by kindly telling me your name? :").strip().title()
+response =  "Hello " + (name)
+print(" ")
+print(response)
+print(" ")
+response_2 = input("And how are you doing today? :").title()
+print(" ")
+response_3 = """Thanks for responding, but I'm just a computer and 
+I don't realy understand the humans words you entered >>""" + (response_2)
+print(" ")
+print(response_3)
+print(" ")
+print("Please help Michael with this simple task")
+print(" ")
+email = input("What is your email address? :").strip()
+
+# slice out username
+user = email[:email.index("@")]
+
+#slice domain name
+
+domain = email[email.index("@") + 1 :]
+
+#format message
+output = "Your username is {} and your domain name is {}".format(user, domain)
+output_b = "Thanks for your help " + (name)
+output_c = "The task is now complete.. Thank you!"
+#display output message
+print(output_b)
+print(" ")
+print(output_c) 
+print(" ")
+print(output)

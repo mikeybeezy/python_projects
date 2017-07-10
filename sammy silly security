@@ -1,0 +1,35 @@
+known_users = ["Michael", "David", "Anthony", "Ronald", "James", "Bob" "Alice"]
+
+# Ask for the users Name
+
+# ask them if they want to know the amount of people in the database
+
+#Ask them if the want to know how many makles in the database
+
+# ask them if the want to know the names of the people in the database
+
+
+while True:
+    print("Hi! My Name is Sammy")
+    name = input("What is your name?: ").strip().capitalize()
+
+    if name in known_users:
+        print("Hello {}!" .format(name))
+        remove = input("would you like your name to be removed from the system? y/n: ").strip().lower()
+
+        if remove == "y":
+            known_users.remove(name)
+            print("You have now been removed. Please review list")
+            print(known_users)
+        elif remove == "n":
+            print("No problem, Michael did not want you to leave anyway!")
+
+    else:
+        print("Hello {}!".format(name))
+        add_me = input("Would you like to be added to the system (y/n)?: ").strip().lower()
+        if add_me == "y":
+            known_users.append(name)
+            print("You have now been added. Please review list")
+            print(known_users)
+        elif add_me == "n":
+            print("No worries, Michael just wanted to know you")

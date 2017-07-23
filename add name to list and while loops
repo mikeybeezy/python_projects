@@ -1,0 +1,10 @@
+# While loops add name to list
+
+List = []
+
+while len(List) < 3:
+    new_name = input("please add a new name: ").strip().capitalize()
+    List.append(new_name)
+
+print("sorry list is full")
+print(List)
